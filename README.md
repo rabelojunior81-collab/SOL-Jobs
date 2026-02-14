@@ -236,40 +236,6 @@ const backend = {
 
 ---
 
-## 📁 Estrutura do Projeto
-
-```
-SOL-Jobs/
-├── 📂 docs/                   # 📚 Documentação do Projeto
-│   ├── PRD.md               # Especificação de Produto (MVP v0.1)
-│   ├── technical-document.html  # Documento Técnico HTML
-│   ├── concepts-guide.md    # Guia de Conceitos
-│   ├── ascension-guide.md   # Guia de Ascensão e Lucro
-│   ├── investment-deck.md  # Proposta de Investimento
-│   └── wireframe-original.jpg  # Rascunho Original
-├── 📂 contracts/              # ⛓️ Smart Contracts
-│   ├── 📂 solana/           # Solana (Anchor/Rust)
-│   │   ├── escrow/
-│   │   └── reputation/
-│   └── 📂 evm/              # EVM (Base/Solidity)
-│       ├── Escrow.sol
-│       ├── SoulboundToken.sol
-│       └── interfaces/
-├── 📂 frontend/              # 📱 Aplicação Mobile
-│   ├── 📂 src/
-│   │   ├── 📂 screens/
-│   │   ├── 📂 components/
-│   │   ├── 📂 hooks/
-│   │   └── 📂 services/
-│   └── 📂 app.json
-├── 📂 backend/               # ⚙️ API & Indexers
-│   ├── 📂 api/
-│   └── 📂 indexers/
-├── 📂 scripts/               # 🔧 Scripts de deploy
-└── 📂 tests/                 # 🧪 Testes
-```
-
----
 
 ## 📚 Documentação de Referência
 
@@ -286,31 +252,6 @@ SOL-Jobs/
 
 ---
 
-## 🤝 Como Contribuir
-
-```bash
-# Clone o repositório
-git clone https://github.com/rabelojunior81-collab/SOL-Jobs.git
-
-# Entre no diretório
-cd SOL-Jobs
-
-# Instale dependências
-npm install
-
-# Execute o desenvolvimento
-npm run dev
-```
-
-### Guidelines
-
-1. 📖 Leia nosso [Code of Conduct](./CODE_OF_CONDUCT.md)
-2. 🔀 Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. ✅ Faça commit das mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. 📤 Push para a branch (`git push origin feature/AmazingFeature`)
-5. 🔃 Abra um Pull Request
-
----
 
 ## 📞 Contato & Comunidade
 
