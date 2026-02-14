@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOL-Jobs: Documentação Técnica</title>
+    <style>
+        :root {
+            --bg-color: #f7f7f7;
+            --card-bg: #ffffff;
+            --text-color: #37352f;
+            --heading-color: #111111;
+            --accent-color: #000000;
+            --border-color: #e0e0e0;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 60px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: var(--heading-color);
+            font-weight: 600;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            letter-spacing: -0.02em;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5em;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.3em;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+
+        ul,
+        ol {
+            margin-bottom: 1em;
+            padding-left: 1.5em;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2em 0;
+            font-size: 0.95rem;
+        }
+
+        th,
+        td {
+            border: 1px solid var(--border-color);
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f9f9f9;
+            font-weight: 600;
+        }
+
+        code {
+            background-color: rgba(135, 131, 120, 0.15);
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+            font-size: 0.85em;
+            color: #EB5757;
+        }
+
+        .mermaid {
+            display: flex;
+            justify-content: center;
+            margin: 2em 0;
+            background: #fdfdfd;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            overflow-x: auto;
+        }
+
+        blockquote {
+            border-left: 4px solid var(--accent-color);
+            margin: 1.5em 0;
+            padding-left: 1em;
+            color: #555;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>SOL-Jobs: O Protocolo de Liquidez de Talento e Confiança Invisível</h1>
+
+        <h2>1. Resumo Executivo</h2>
+        <p>O <strong>SOL-Jobs</strong> não é apenas um marketplace de freelancers; é uma infraestrutura financeira
+            descentralizada que resolve a fricção crônica da <em>Gig Economy</em> no Brasil. Nossa tese central é a
+            <strong>"Web3 Invisível"</strong>: utilizamos a tecnologia blockchain (Solana e Base) para eliminar o risco
+            de calote e garantir liquidez imediata, enquanto a experiência do usuário (UX) permanece familiar, fluida e
+            social (estilo TikTok/Instagram).
+        </p>
+        <p>Ao combinar <strong>Social Discovery</strong> (vídeos curtos como portfólio), <strong>Smart Escrow</strong>
+            (garantia matemática de pagamento) e <strong>Reputação Imutável</strong> (Soulbound NFTs), criamos um
+            ecossistema onde o talento é o único colateral necessário. O modelo de negócio inova ao monetizar o
+            <em>float</em> financeiro via DeFi (Yield on Escrow), permitindo taxas mínimas para os usuários e alinhando
+            incentivos de longo prazo.
+        </p>
+
+        <h2>2. Incepção: Do Rascunho à Realidade</h2>
+        <p>A visão original do SOL-Jobs nasceu de uma necessidade clara de segurança e agilidade, conforme evidenciado
+            no rascunho inicial (Manuscrito "SOL-Jobs/Trampos"). A evolução do conceito manteve os pilares fundamentais
+            enquanto expandia a sofisticação tecnológica:</p>
+
+        <img src="2a374f5e-b23b-44f4-b77f-46f6119fa6d1.jpg" alt="Rascunho Original do SOL-Jobs"
+            style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin: 20px auto; display: block;">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Conceito Original (Rascunho)</th>
+                    <th>Evolução no Produto Final (MVP v0.1)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>"Contrato Automático - Agilidade"</strong></td>
+                    <td>Evoluiu para <strong>Smart Contracts</strong> auto-executáveis na Solana/Base, eliminando
+                        burocracia humana.</td>
+                </tr>
+                <tr>
+                    <td><strong>"Trava de Capital - Segurança (Escrow)"</strong></td>
+                    <td>Refinado para um sistema de <strong>Smart Escrow com Yield</strong>, onde o capital travado gera
+                        rendimento passivo (DeFi) enquanto o serviço é executado.</td>
+                </tr>
+                <tr>
+                    <td><strong>"Reputação com NFT (Imutável)"</strong></td>
+                    <td>Formalizado como <strong>Soulbound Tokens (SBTs)</strong>, criando um currículo on-chain
+                        intransferível e à prova de censura.</td>
+                </tr>
+                <tr>
+                    <td><strong>"Cálculo de Danos"</strong></td>
+                    <td>Implementado como <strong>Caução Inteligente</strong>, permitindo aluguel de equipamentos e
+                        serviços físicos com garantia programável.</td>
+                </tr>
+                <tr>
+                    <td><strong>"Dinheiro Travado -> Liberado"</strong></td>
+                    <td>Integrado a um gateway <strong>Pix-to-Crypto</strong>, permitindo on-ramp e off-ramp
+                        instantâneos para a realidade brasileira.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>3. Arquitetura Técnica</h2>
+        <p>O diagrama abaixo ilustra o fluxo de dados e valor, desde a interação do usuário no Frontend Mobile até a
+            liquidação financeira e registro de reputação na Blockchain.</p>
+
+        <div class="mermaid">
+            graph TD
+            subgraph "Camada de Aplicação (Frontend)"
+            App["App Mobile / PWA"]
+            Auth["Privy / Dynamic Auth"]
+            Social["Feed de Vídeos & Perfil"]
+            end
+
+            subgraph "Camada de Infraestrutura (Middleware)"
+            PixGateway["Gateway Pix (On/Off-Ramp)"]
+            Relayer["Gasless Relayer / Paymaster"]
+            IPFS["IPFS / Arweave (Armazenamento de Mídia)"]
+            end
+
+            subgraph "Camada de Protocolo (Blockchain)"
+            SmartWallet["Smart Wallet (ERC-4337)"]
+            EscrowSC["Smart Contract de Escrow"]
+            SBT["Contrato de Reputação (SBT)"]
+            Oracle["Oráculo de Preços / Kleros (Disputas)"]
+            end
+
+            subgraph "Camada DeFi (Yield)"
+            USDC["USDC Stablecoin"]
+            YieldProtocol["Aave / Kamino (Lending Pool)"]
+            end
+
+            %% Fluxos
+            App -->|Login Social| Auth
+            Auth -->|Gera/Conecta| SmartWallet
+            App -->|Upload de Portfólio| IPFS
+
+            %% Fluxo Financeiro
+            App -->|Pagamento em BRL| PixGateway
+            PixGateway -->|Converte para USDC| SmartWallet
+            SmartWallet -->|Trava Fundos| EscrowSC
+            EscrowSC -->|Deposita Colateral| YieldProtocol
+            YieldProtocol -->|Retorna Rendimento| EscrowSC
+
+            %% Fluxo de Execução
+            EscrowSC -->|Libera Pagamento| SmartWallet
+            EscrowSC -->|Minta Prova de Trabalho| SBT
+            EscrowSC -->|Em caso de conflito| Oracle
+        </div>
+
+        <h2>4. Fluxos de Usuário</h2>
+
+        <h3>4.1 Jornada do Jobber (Prestador)</h3>
+        <p>Do cadastro à construção de reputação e saque.</p>
+
+        <div class="mermaid">
+            sequenceDiagram
+            actor Jobber
+            participant App
+            participant Wallet as "Smart Wallet"
+            participant Escrow as "Contrato Escrow"
+            participant SBT as "Contrato SBT"
+            participant Bank as "Banco (Pix)"
+
+            Jobber->>App: Login Social (Google/Email)
+            App->>Wallet: Criação automática de Carteira (Gasless)
+            Jobber->>App: Upload de Vídeo Portfólio & Micro-Curso
+            App->>Jobber: Badge de Verificação Ativo
+            Jobber->>App: Aceita Job / Envia Proposta
+            Note over App, Escrow: Cliente aceita e trava fundos
+            App->>Jobber: Notificação: 'Fundos Garantidos'
+            Jobber->>App: Executa Trabalho e Envia Provas
+            App->>Escrow: Cliente Aprova Entrega
+            Escrow->>Wallet: Libera USDC (Pagamento)
+            Escrow->>SBT: Minta NFT de Reputação (Soulbound)
+            Jobber->>App: Solicita Saque
+            Wallet->>Bank: Converte USDC para BRL (Pix Instantâneo)
+        </div>
+
+        <h3>4.2 Jornada do Cliente (Contratante)</h3>
+        <p>Da descoberta do talento ao pagamento seguro.</p>
+
+        <div class="mermaid">
+            graph LR
+            A[Início] --> B("Explorar Feed / Busca")
+            B --> C{"Encontrou Talento?"}
+            C -- Não --> B
+            C -- Sim --> D["Visualizar Perfil e Badges"]
+            D --> E["Solicitar Serviço / Match"]
+            E --> F["Pagamento via Pix"]
+            F --> G["Fundos Convertidos para USDC"]
+            G --> H["Fundos Travados no Escrow"]
+            H --> I["Aguardar Entrega"]
+            I --> J{"Entrega Aprovada?"}
+            J -- Não --> K["Abrir Disputa / Kleros"]
+            J -- Sim --> L["Liberar Pagamento"]
+            L --> M["Avaliar Jobber"]
+            M --> N[Fim]
+        </div>
+
+        <h2>5. Modelo de Negócio e Tokenomics</h2>
+        <p>O modelo de negócio do SOL-Jobs é desenhado para ser "fricção zero", capturando valor da eficiência do
+            capital e não do bolso do usuário.</p>
+
+        <ol>
+            <li>
+                <strong>Yield on Escrow (Receita Primária):</strong>
+                <ul>
+                    <li>O capital (USDC) travado nos contratos de Escrow é automaticamente alocado em protocolos de
+                        liquidez (Aave/Kamino).</li>
+                    <li>O rendimento gerado durante o período de execução do serviço (float) é retido pela plataforma
+                        como receita.</li>
+                    <li><em>Benefício:</em> Permite cobrar taxas de transação (take rate) próximas de zero para os
+                        usuários.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Tokenomics Dual (Sem Token de Governança Inicial):</strong>
+                <ul>
+                    <li><strong>USDC (Utility):</strong> Moeda de troca estável para garantir previsibilidade de valor.
+                    </li>
+                    <li><strong>SBT (Reputation):</strong> Tokens intransferíveis que acumulam valor social e técnico.
+                        Funcionam como multiplicadores de visibilidade no algoritmo de feed.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Monetização Adicional:</strong>
+                <ul>
+                    <li><strong>Promoted Slots:</strong> Jobbers pagam para impulsionar seus vídeos no feed.</li>
+                    <li><strong>Marketplace de Ferramentas:</strong> Venda de créditos para IAs e ferramentas do Rabelus
+                        Lab.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>6. Sugestões Técnicas para o PRD</h2>
+        <p>Para garantir a robustez e escalabilidade do MVP, sugerimos as seguintes implementações técnicas específicas:
+        </p>
+
+        <ol>
+            <li>
+                <strong>Stack de Desenvolvimento:</strong>
+                <ul>
+                    <li><strong>Frontend:</strong> React Native com Expo (para deploy rápido iOS/Android) e
+                        <code>wagmi</code> / <code>viem</code> para interações EVM (Base), além de
+                        <code>@solana/web3.js</code> para Solana.
+                    </li>
+                    <li><strong>Indexação:</strong> Utilizar <strong>The Graph</strong> ou <strong>Goldsky</strong> para
+                        indexar eventos on-chain (como mint de SBTs) e alimentar o feed do app com baixa latência.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Segurança e Otimização:</strong>
+                <ul>
+                    <li><strong>Padrão Checks-Effects-Interactions:</strong> Rigoroso controle no Smart Contract de
+                        Escrow para evitar ataques de reentrância.</li>
+                    <li><strong>Permit2 (Uniswap):</strong> Implementar aprovações de tokens mais baratas e seguras para
+                        o fluxo de pagamento em USDC na rede Base.</li>
+                    <li><strong>Account Abstraction (ERC-4337):</strong> Uso de Paymasters para subsidiar o gás das
+                        primeiras transações do usuário, garantindo a experiência "Gasless".</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Integração DeFi:</strong>
+                <ul>
+                    <li>Utilizar <strong>Vaults ERC-4626</strong> padronizados para a integração com Aave/Kamino,
+                        facilitando a troca de estratégias de yield sem reescrever o contrato principal.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>7. Roadmap</h2>
+        <ul>
+            <li><strong>Fase 1: MVP "Trust Core" (Mês 1-2)</strong>
+                <ul>
+                    <li>Desenvolvimento dos Smart Contracts de Escrow (Solana & Base).</li>
+                    <li>Integração com Privy (Login Social e Wallet).</li>
+                    <li>Gateway Pix básico (On/Off-ramp).</li>
+                </ul>
+            </li>
+            <li><strong>Fase 2: Social Layer & Reputation (Mês 3-4)</strong>
+                <ul>
+                    <li>Lançamento do Feed de Vídeos (Algoritmo básico).</li>
+                    <li>Implementação dos contratos de SBT (Soulbound Tokens).</li>
+                    <li>Sistema de Micro-cursos e Badges.</li>
+                </ul>
+            </li>
+            <li><strong>Fase 3: Financial Scale (Mês 5-6)</strong>
+                <ul>
+                    <li>Ativação do Yield Farming no Escrow (Integração Aave/Kamino).</li>
+                    <li>Auditoria de segurança completa.</li>
+                    <li>Lançamento público e campanhas de Growth.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'neutral',
+            securityLevel: 'loose',
+            fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif'
+        });
+    </script>
+</body>
+
+</html>

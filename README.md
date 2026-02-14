@@ -240,28 +240,49 @@ const backend = {
 
 ```
 SOL-Jobs/
-├── 📂 contracts/              # Smart Contracts
-│   ├── 📂 solana/           # Programas Anchor/Rust
+├── 📂 docs/                   # 📚 Documentação do Projeto
+│   ├── PRD.md               # Especificação de Produto (MVP v0.1)
+│   ├── technical-document.html  # Documento Técnico HTML
+│   ├── concepts-guide.md    # Guia de Conceitos
+│   ├── ascension-guide.md   # Guia de Ascensão e Lucro
+│   ├── investment-deck.md  # Proposta de Investimento
+│   └── wireframe-original.jpg  # Rascunho Original
+├── 📂 contracts/              # ⛓️ Smart Contracts
+│   ├── 📂 solana/           # Solana (Anchor/Rust)
 │   │   ├── escrow/
 │   │   └── reputation/
-│   └── 📂 evm/              # Contratos Solidity (Base)
+│   └── 📂 evm/              # EVM (Base/Solidity)
 │       ├── Escrow.sol
 │       ├── SoulboundToken.sol
-│       └──interfaces/
-├── 📂 frontend/              # Aplicação Mobile
+│       └── interfaces/
+├── 📂 frontend/              # 📱 Aplicação Mobile
 │   ├── 📂 src/
 │   │   ├── 📂 screens/
 │   │   ├── 📂 components/
 │   │   ├── 📂 hooks/
 │   │   └── 📂 services/
 │   └── 📂 app.json
-├── 📂 backend/               # API & Indexers
+├── 📂 backend/               # ⚙️ API & Indexers
 │   ├── 📂 api/
 │   └── 📂 indexers/
-├── 📂 docs/                  # Documentação
-├── 📂 scripts/               # Scripts de deploy
-└── 📂 tests/                 # Testes
+├── 📂 scripts/               # 🔧 Scripts de deploy
+└── 📂 tests/                 # 🧪 Testes
 ```
+
+---
+
+## 📚 Documentação de Referência
+
+> **Para o Agente Orquestrador (IA)**: Utilize esta documentação como base para planificar e implementar o App.
+
+| Documento | Descrição | Uso Principal |
+|-----------|-----------|---------------|
+| [`docs/PRD.md`](./docs/PRD.md) | Especificação de Produto | Definição de features, UX/UI, roadmap técnico |
+| [`docs/technical-document.html`](./docs/technical-document.html) | Documento Técnico | Arquitetura, fluxos, stack, integrações |
+| [`docs/concepts-guide.md`](./docs/concepts-guide.md) | Guia de Conceitos | Explicação dos conceitos Web3 para usuários |
+| [`docs/ascension-guide.md`](./docs/ascension-guide.md) | Guia de Ascensão | Como crescer na plataforma |
+| [`docs/investment-deck.md`](./docs/investment-deck.md) | Proposta de Investimento | Pitch deck para investidores |
+| [`docs/wireframe-original.jpg`](./docs/wireframe-original.jpg) | Wireframe Original | Rascunho inicial do projeto |
 
 ---
 
